@@ -418,8 +418,6 @@ class BrowserViewController: UIViewController {
 
     func resetBrowser(hidePreviousSession: Bool = false) {
 
-        UserDefaults.standard.set(nil, forKey: "searchedHistory")
-
         // Used when biometrics fail and the previous session should be obscured
         if hidePreviousSession {
             clearBrowser()
@@ -640,6 +638,7 @@ class BrowserViewController: UIViewController {
     }
 
     @objc private func selectLocationBar() {
+        showToolbars()
         urlBar.activateTextField()
     }
 
@@ -1220,8 +1219,6 @@ extension BrowserViewController: WebControllerDelegate {
 
     func webControllerURLDidChange(_ controller: WebController, url: URL) {
         showToolbars()
-        updateURLBar()
-        urlBar.url = url
     }
 
     func webController(_ controller: WebController, didFailNavigationWithError error: Error) {

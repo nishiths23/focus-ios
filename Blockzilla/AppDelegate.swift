@@ -70,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ModalDelegate, AppSplashC
         // We clear the Caches directory after each Erase, but WebKit apparently maintains
         // localStorage in-memory (bug 1319208), so we just disable it altogether.
         UserDefaults.standard.set(false, forKey: "WebKitLocalStorageEnabledPreferenceKey")
+        UserDefaults.standard.removeObject(forKey: "searchedHistory")
 
         // Re-register the blocking lists at startup in case they've changed.
         Utils.reloadSafariContentBlocker()
@@ -105,7 +106,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ModalDelegate, AppSplashC
                 // Set the prefIntroVersion viewed number in the same context as the presentation.
                 UserDefaults.standard.set(AppDelegate.prefIntroVersion, forKey: AppDelegate.prefIntroDone)
                 UserDefaults.standard.set(AppInfo.shortVersion, forKey: AppDelegate.prefWhatsNewDone)
-                self.browserViewController.present(IntroViewController(), animated: false, completion: nil)
+                let introViewController = IntroViewController()
+                introViewController.modalPresentationStyle = .fullScreen
+                self.browserViewController.present(introViewController, animated: false, completion: nil)
             }
         }
 

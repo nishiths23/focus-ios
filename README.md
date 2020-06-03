@@ -1,5 +1,7 @@
 [![codecov](https://codecov.io/gh/mozilla-mobile/focus/branch/master/graph/badge.svg)](https://codecov.io/gh/mozilla-mobile/focus)
 
+⚠️ **Development of this project is not currently a high priority. Because of this, we cannot guarantee timely reviews or interactions on this repository. If you would like to contribute to one of our other iOS projects, we recommend checking out [Firefox iOS](https://github.com/mozilla-mobile/firefox-ios). We greatly appreciate your interest in and contributions towards Focus and look forward to working with you on other projects!**
+
 # Firefox Focus for iOS
 
 _Browse like no one’s watching. The new Firefox Focus automatically blocks a wide range of online trackers — from the moment you launch it to the second you leave it. Easily erase your history, passwords and cookies, so you won’t get followed by things like unwanted ads._
@@ -15,7 +17,7 @@ We encourage you to participate in this open source project. We love Pull Reques
 * Mailing List:   [firefox-focus-public@](https://mail.mozilla.org/listinfo/firefox-focus-public)
 * Bugs:           [File a new bug](https://github.com/mozilla-mobile/focus-ios/issues/new) • [Existing bugs](https://github.com/mozilla-mobile/focus-ios/issues)
 
-If you're looking for a good way to get started contributing, check out out some [good first issues](https://github.com/mozilla-mobile/focus-ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+If you're looking for a good way to get started contributing, check out some [good first issues](https://github.com/mozilla-mobile/focus-ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 We also tag recommended bugs for contributions with [help wanted](https://github.com/mozilla-mobile/focus-ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22).
 
